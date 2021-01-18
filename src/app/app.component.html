@@ -1,8 +1,5 @@
 <ap-photo
-    url='https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Sultan_the_Barbary_Lion.jpg/440px-Sultan_the_Barbary_Lion.jpg'
-    description='Leão'
-></ap-photo>
-<ap-photo
-    url='https://super.abril.com.br/wp-content/uploads/2016/10/super_imgleoas_androgenas.jpg?quality=70&strip=info&resize=680,453'
-    description='Leoa'
+    *ngFor='let photo of photos'
+    [url]='photo.url'
+    [description]='photo.description'
 ></ap-photo>
