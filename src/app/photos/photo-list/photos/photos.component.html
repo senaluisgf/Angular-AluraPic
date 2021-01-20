@@ -7,8 +7,8 @@
 
 <ol class='list-unstyled'>
   <li *ngFor='let cols of rows' class='row no-gutters'>
-    <div *ngFor='let photo of cols' class='col-4'>
-      <ap-card [titulo]='photo.description'>
+    <div *ngFor='let photo of cols' class='col-4' apDarkOnHover brightness='80%'>
+      <ap-card >
         <ap-photo
           [url]='photo.url'
           [description]='photo.description'
