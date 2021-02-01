@@ -8,7 +8,7 @@ import { PlatformDetector } from 'src/app/core/platform-detector/platform-detect
 @Component({
     templateUrl: './signin.component.html'
 })
-export class SigninComponent implements OnInit{
+export class SignInComponent implements OnInit{
 
     loginForm: FormGroup
     @ViewChild('userNameInput') userNameInput: ElementRef<HTMLInputElement>
