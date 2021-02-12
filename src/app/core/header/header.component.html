@@ -4,7 +4,7 @@
         <div *ngIf='(user$ | async) as user; else login'>
             <i class="fa fa-user-circle"></i>
             <a class="ml-1">{{ user.name }}</a>
-            <button class="btn btn-primary ml-1" (click)="logout()">Logout</button>
+            <button class="btn btn-secondary ml-1" (click)="logout()">Logout</button>
         </div>
         <ng-template #login>
             <a [routerLink]='[""]' class="navbar-text">
