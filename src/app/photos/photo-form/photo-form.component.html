@@ -3,7 +3,7 @@
 
     <div class="form-group" *ngIf='!preview; else previewImage'>
       <div class="col-md-6 text-center">
-        <button type='button' class="btn btn-primary" (click)='fileInput.click()'>
+        <button apImmediateClick type='button' class="btn btn-primary" (click)='fileInput.click()'>
           <i class="fa fa-image -fa-4x align-middle"></i>
         </button>
         <input #fileInput
