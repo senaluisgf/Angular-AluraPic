@@ -12,6 +12,7 @@ import { SearchComponent } from "./search/search.component";
 
 import { CardModule } from "src/app/shared/components/card/card.module";
 import { DarkOnHoverModule } from "src/app/shared/directives/dark-on-hover/dark-on-hover.module";
+import { RouterModule } from "@angular/router";
 
 @NgModule({
     declarations:[
@@ -25,7 +26,8 @@ import { DarkOnHoverModule } from "src/app/shared/directives/dark-on-hover/dark-
         CommonModule,
         PhotoModule,
         CardModule,
-        DarkOnHoverModule
+        DarkOnHoverModule,
+        RouterModule
     ]
 })
 export class PhotoListModule {}
