@@ -19,7 +19,6 @@ export class HeaderComponent {
     }
 
     @Output() logout(){
-        console.log('clicado')
         this.userService.logout()
         this.router.navigate([''])
     }
