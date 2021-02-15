@@ -1,6 +1,6 @@
-import { formatCurrency } from "@angular/common";
 import { HttpClient, HttpParams } from "@angular/common/http";
 import { Injectable } from "@angular/core";
+import { Observable } from "rxjs";
 
 import { Photo } from "./photo";
 
@@ -29,5 +29,9 @@ export class PhotoService{
         formData.append('imageFile', file)
         
         return this.http.post(API+'/photos/upload', formData)
+    }
+
+    findById(id: string): Observable<Photo>{
+        return this.http.get<Photo>(API + '/photos/'+id)
     }
 }
