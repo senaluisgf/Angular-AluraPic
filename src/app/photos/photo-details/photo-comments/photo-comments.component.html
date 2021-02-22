@@ -14,11 +14,19 @@
     </ul>
 
     <div class="mt-4">
-        <form>
+        <form [formGroup]='photoCommentForm'>
             <div class="input-group">
-            <textarea class="form-control"></textarea>
+            <textarea formControlName='comment' class="form-control"></textarea>
+            
+            <ap-vmessage
+                text='Maximun size allowed is 300'
+                *ngIf='photoCommentForm.get("comment").errors?.maxlength'>
+            </ap-vmessage>
+
             <div class="input-group-append">
-                <button class="btn btn-primary pull-left">Publish</button>
+                <button class="btn btn-primary pull-left" [disabled]='photoCommentForm.invalid'>
+                    Publish
+                </button>
             </div>
             </div>
         </form>
