@@ -27,13 +27,13 @@ const routes: Routes = [
         }
     },
     {
-        path: 'p/:photoId',
-        component: PhotoDetailsComponent
-    },
-    {
         path: 'p/add',
         component: PhotoFormComponent,
         canActivate: [AuthGuard]
+    },
+    {
+        path: 'p/:photoId',
+        component: PhotoDetailsComponent
     },
     {path: '**', component: NotFoundComponent}
 ]
