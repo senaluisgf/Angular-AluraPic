@@ -13,7 +13,7 @@
         </li>
     </ul>
 
-    <div class="mt-4">
+    <div apShowIfLogged class="mt-4">
         <form [formGroup]='photoCommentForm' (submit)="save()">
             <div class="input-group">
             <textarea formControlName='comment' class="form-control"></textarea>
