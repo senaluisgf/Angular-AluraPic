@@ -6,7 +6,9 @@ import { catchError, map } from "rxjs/operators";
 import { Photo } from "./photo";
 import { PhotoComment } from "./photo-comment";
 
-const API = 'http://localhost:3000'
+import { environment } from '../../../environments/environment'
+
+const API = environment.ApiUrl
 
 @Injectable({ providedIn: 'root' })
 export class PhotoService{
