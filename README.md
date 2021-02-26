@@ -17,6 +17,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     - Melhora de performance da aplicação através de lazy loading
     - Criação de validadores próprios para formulários
     - Implementação de validação assíncrona
+- **Angular parte 3: upload, build e novos componentes**
+    - Realização de uploads dentro do Angular
+    - Lidar com segmentos de rotas
+    - Permissões de usuários autenticados
+    - Diferenciar variáveis de ambientes de deploy
+
+
 
 ## Cursos Implementados
 
@@ -27,3 +34,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 [Angular parte 2: Autenticação, Forms e lazy loading](https://cursos.alura.com.br/course/angular-autenticacao)
 *(Clique [aqui](https://github.com/senaluisgf/Angular-AluraPic/releases/tag/angular_parte02) para baixar o código desenvolvido até esta etapa)*
 ![](./cursos/angular_parte02.png)
+
+[Angular parte 3: upload, build e novos componentes](https://cursos.alura.com.br/course/angular-upload-build)
+*(Clique [aqui](https://github.com/senaluisgf/Angular-AluraPic/releases/tag/angular_parte03) para baixar o código desenvolvido até esta etapa)*
+![](./cursos/angular_parte03.png)
