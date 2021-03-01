@@ -36,7 +36,6 @@ export class PhotoCommentsComponent implements OnInit{
             .pipe(switchMap(() => this.photoService.getComments(this.photoId)))
             .pipe(tap(() => {
                 this.photoCommentForm.reset()
-                alert('Comentário adicionado com sucesso!')
             }))
             
     }
