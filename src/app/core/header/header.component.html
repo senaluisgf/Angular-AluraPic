@@ -10,9 +10,15 @@
         </a>
 
         <ap-menu #menu>
-            <ul>
-                <li>Menu item 1</li>
-                <li>Menu item 1</li>
+            <ul class="list-unstyled">
+                <li>
+                    <a
+                        [routerLink]='["p","add"]'
+                        (click)='toggle()'
+                        apShowIfLogged>
+                        Upload
+                    </a>
+                </li>
             </ul>
         </ap-menu>
 
