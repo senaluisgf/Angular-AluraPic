@@ -9,7 +9,6 @@ export class MenuComponent {
     isShow = false;
 
     toggle(){
-        console.log('toggle chamado')
         this.isShow = !this.isShow
     }
 }
