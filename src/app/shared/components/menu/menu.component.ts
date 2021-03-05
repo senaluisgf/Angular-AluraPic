@@ -6,9 +6,9 @@ import { Component } from "@angular/core";
     styleUrls: ['menu.component.css']
 })
 export class MenuComponent {
-    isShow = false;
+    isShown = false;
 
     toggle(){
-        this.isShow = !this.isShow
+        this.isShown = !this.isShown
     }
 }
