@@ -4,20 +4,22 @@ import * as StackTrace from 'stacktrace-js'
 
 import { UserService } from "src/app/core/user/user.service";
 import { ServerLogService } from "./server-log.service";
+import { Router } from "@angular/router";
+
+import { environment } from '../../../environments/environment'
 
 @Injectable()
 export class GlobalErrorsHandler implements ErrorHandler{
 
-    constructor(
-        private injector: Injector,
-        private serverLogService: ServerLogService
-    ){}
+    constructor(private injector: Injector){}
 
     handleError(error: any): void {
         console.log('Entrou no global');
 
         const location = this.injector.get(LocationStrategy)
         const userName = this.injector.get(UserService).getUserName()
+        const serverLogService = this.injector.get(ServerLogService)
+        const router = this.injector.get(Router)
 
         const url = location instanceof PathLocationStrategy
         ? location.path()
@@ -26,6 +28,8 @@ export class GlobalErrorsHandler implements ErrorHandler{
         const message = error.message
             ? error.message
             : error
+        
+        if(environment.production) router.navigate(['/global-errors'])
         
         StackTrace
             .fromError(error)
@@ -36,7 +40,7 @@ export class GlobalErrorsHandler implements ErrorHandler{
 
                 console.log(message)
                 console.log(stack)
-                this.serverLogService
+                serverLogService
                     .log({ message, url, stack, userName })
                     .subscribe(
                         () => console.log("Error sent to server log errors"),

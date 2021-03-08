@@ -8,6 +8,7 @@ import { PhotoFormComponent } from './photos/photo-form/photo-form.component'
 import { PhotoListComponent } from './photos/photo-list/photo-list.component'
 import { NotFoundComponent } from './errors/not-found/not-found.component'
 import { PhotoDetailsComponent } from './photos/photo-details/photo-details.component'
+import { GlobalErrorsComponent } from './errors/global-errors/global-errors.component'
 
 const routes: Routes = [
     {
@@ -49,6 +50,13 @@ const routes: Routes = [
         component: NotFoundComponent,
         data: {
             title: 'Not Found!'
+        }
+    },
+    {
+        path: 'global-errors',
+        component: GlobalErrorsComponent,
+        data: {
+            title: 'Global Errors'
         }
     },
     {
