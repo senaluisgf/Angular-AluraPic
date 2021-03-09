@@ -6,6 +6,7 @@ import { lowerCaseValidator } from "src/app/shared/validators/lower-case.validat
 import { NewUser } from "./new-user";
 import { SignUpService } from "./signup.service";
 import { UserNotTakenValidatorService } from "./user-not-taken.validator.service";
+import { userNamePasswordValidator } from "./username-password.validator";
 
 @Component({
     templateUrl: './signup.component.html',
@@ -56,6 +57,8 @@ export class SignUpComponent implements OnInit{
                     Validators.maxLength(8)
                 ]
             ]
+        }, {
+            validator: userNamePasswordValidator
         })
 
         this.platformDetectorService.isPlatformBrowser()

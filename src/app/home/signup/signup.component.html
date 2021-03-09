@@ -84,6 +84,13 @@
         </ap-vmessage>
     </div>
 
+    <div>
+        <ap-vmessage
+            *ngIf='signupForm.errors?.userNamePassword && (form.submitted || signupForm.get("password").touched)'
+            text='Username and password must be different'>
+        </ap-vmessage>
+    </div>
+
     <button class="btn btn-primary btn-block">Register</button>
 
     <p>Already a user? <a [routerLink]="['']">Sign In!</a></p>
