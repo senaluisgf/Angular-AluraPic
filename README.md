@@ -22,7 +22,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     - Lidar com segmentos de rotas
     - Permissões de usuários autenticados
     - Diferenciar variáveis de ambientes de deploy
-
+- **Angular parte 4: lapidando o projeto**
+    - Criação de componentes avançados
+    - Adição indicação de uploado de fotos
+    - Interceptação de erros e redirecionamento para server de erros
+    - Validação de formulário de forma mais aprofundada
+    - Dando continuidade a tarefas solicitadas depois de logar
 
 
 ## Cursos Implementados
@@ -38,3 +43,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 [Angular parte 3: upload, build e novos componentes](https://cursos.alura.com.br/course/angular-upload-build)
 *(Clique [aqui](https://github.com/senaluisgf/Angular-AluraPic/releases/tag/angular_parte03) para baixar o código desenvolvido até esta etapa)*
 ![](./cursos/angular_parte03.png)
+
+[Angular parte 4: lapidando o projeto](https://cursos.alura.com.br/course/angular-lapidando-projeto)
+*(Clique [aqui](https://github.com/senaluisgf/Angular-AluraPic/releases/tag/angular_parte04) para baixar o código desenvolvido até esta etapa)*
+![](./cursos/angular_parte04.png)
