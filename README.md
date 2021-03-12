@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.7.
 
+# Instalação e Execução
+
+Para instalar e executar o projeto em su a máquina, você pode ir na aba **Wiki** desde repositóio ou [clique aqui](https://github.com/senaluisgf/Angular-AluraPic/wiki)
+
 ## Conhecimentos Adquiridos
 - **Angular parte 1: Fundamentos**
     -  Fundamentos do Angular
